@@ -1,13 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 export default function Header(props) {
 	return (
 		<div>
 			<nav className="navbar navbar-light bg-light">
-				<a className="navbar-brand" href="/">
+				<Link className="navbar-brand" to="/">
 					{props.title}
-				</a>
+				</Link>
 				{
 					props.searchBar ?
 						<form className="form-inline">
@@ -23,6 +24,7 @@ export default function Header(props) {
 							>
 								Search
 							</button>
+							<Link className='mx-5' to="/about">About</Link>
 						</form> : ""
 				}
 			</nav>

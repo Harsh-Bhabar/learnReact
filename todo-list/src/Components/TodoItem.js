@@ -7,10 +7,9 @@ export default function TodoItem({itemKey, todo, deleteTodoItem}) {
       {console.log(itemKey, todo, deleteTodoItem)}
 
       <p>Sno: {todo.sno}</p>
-      <p>Name: {todo.name}</p>
+      <p>Title: {todo.title}</p>
       <p>Description: {todo.desc}</p>
 
-      <button className="btn btn-sm btn-success">Add</button>
       <button
         className="btn btn-sm btn-danger"
         onClick={() => {
@@ -19,6 +18,7 @@ export default function TodoItem({itemKey, todo, deleteTodoItem}) {
       >
         Delete
       </button>
+      <hr />
     </div>
   );
 }
