@@ -31,12 +31,38 @@ body {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
-  cursor: pointer;;
+  cursor: pointer; 
+}
+
+.form-control {
+  margin: 20px;
+}
+
+.form-control label{
+  display: block;
+}
+
+.form-control input{
+  width: 100%;
+  height: 20px;
+  padding: 20px 10px;
+  margin: 5px;
+}
+
+.form-control-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.form-control-check input{
+  width: min-content;
 }
 
 .tasks {
   display: block;
-  min-height: 400px;
+  min-height: 200px;
   padding: 10px;
   margin: 20px;
 }
@@ -45,6 +71,7 @@ body {
   background-color: #37ba63;
   margin: 10px;
   padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .task {
@@ -55,6 +82,11 @@ body {
   margin: 10px;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.reminderTrue{
+  border-left: 3px solid #235d37;
 }
 
 .timesIcon{
@@ -63,59 +95,11 @@ body {
   cursor: pointer;
 }
 
-/* .task h3{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-/* 
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main {
-  width: 350px;
-  height: 400px;
-  background-color: #24232B;
-}
-
-.top {
-  padding: 24px 24px 32px 24px; 
+.footer{
+  background-color: black;
   color: white;
-  font-size:20px;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
 }
-
-.charLen {
-  display: flex;
-  padding: 24px 24px 32px 24px;
-    color: #707070;
-    font-size: 20px;
-    justify-content: space-between;
-}
-
-
-.checkboxes{
-  display: block;
-  justify-content: space-around;
-  padding: 12px 24px;
-  color: #707070;
-}
-
-.checkboxesGap{
-  margin: 0px 15px 5px 0px;
-}
-
-.generatebtn {
-  min-width: 300px;
-  color: white;
-  font-size: 20px;
-  height: 50px;
-  background-color: #2A8B8B;
-  border-radius: 5px;
-  border: none;
-  margin: 12px 24px;
-} */

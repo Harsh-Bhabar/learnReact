@@ -4,15 +4,10 @@ import Button from './Button'
 
 export default function Header(props) {
 
-
-	const addBtnClickFunc = () => {
-		console.log("btn click");
-	}
-
   return (
 	<div className='header'>
 		  <h1>{props.title}</h1>
-		  <Button text="Add" color="green" onClickFunc={addBtnClickFunc}/>
+		  <Button text={props.showAdd ? "Close" : "Add"} color={props.showAdd ? "red" : "green"} onClickFunc={props.onAdd}/>
 	</div>
   )
 }
